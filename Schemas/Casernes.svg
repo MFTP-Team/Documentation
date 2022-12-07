@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="364" height="378" viewBox="0 0 364 378" xmlns="http://www.w3.org/2000/svg">
+<rect id="frame" x="0" y="0" width="364" height="378" fill="#f7f7f7" stroke="none" stroke-width="0"/>
+
+<!-- Association AFFECTER A -->
+<g class="page_0_Nt5GXIbb diagram_page" visibility="visible">
+	<line x1="61" y1="143" x2="61" y2="51" stroke="#e08214" stroke-width="2"/>
+	<text x="66" y="93" fill="#542788" font-family="Verdana" font-size="12">1,1</text>
+	<line x1="189" y1="51" x2="61" y2="51" stroke="#e08214" stroke-width="2"/>
+	<text x="128" y="68" fill="#542788" font-family="Verdana" font-size="12">1,N</text>
+	<g>
+		<path d="M92 26 a14 14 90 0 1 14 14 V51 h-90 V40 a14 14 90 0 1 14 -14" fill="#fdb863" stroke="#fdb863" stroke-width="0"/>
+		<path d="M106 51 v11 a14 14 90 0 1 -14 14 H30 a14 14 90 0 1 -14 -14 V51 H90" fill="#fee0b6" stroke="#fee0b6" stroke-width="0"/>
+		<rect x="16" y="26" width="90" height="50" fill="none" rx="14" stroke="#e08214" stroke-width="2"/>
+		<line x1="16" y1="51" x2="106" y2="51" stroke="#e08214" stroke-width="1"/>
+		<text x="24" y="43.75" fill="#000" font-family="Verdana" font-size="12">AFFECTER A</text>
+	</g>
+</g>
+
+<!-- Association DISPOSER DE -->
+<g class="page_0_Nt5GXIbb diagram_page" visibility="visible">
+	<line x1="305" y1="143" x2="305" y2="51" stroke="#e08214" stroke-width="2"/>
+	<text x="310" y="93" fill="#542788" font-family="Verdana" font-size="12">1,1</text>
+	<line x1="189" y1="51" x2="305" y2="51" stroke="#e08214" stroke-width="2"/>
+	<text x="228" y="68" fill="#542788" font-family="Verdana" font-size="12">1,N</text>
+	<g>
+		<path d="M341 26 a14 14 90 0 1 14 14 V51 h-100 V40 a14 14 90 0 1 14 -14" fill="#fdb863" stroke="#fdb863" stroke-width="0"/>
+		<path d="M355 51 v11 a14 14 90 0 1 -14 14 H269 a14 14 90 0 1 -14 -14 V51 H100" fill="#fee0b6" stroke="#fee0b6" stroke-width="0"/>
+		<rect x="255" y="26" width="100" height="50" fill="none" rx="14" stroke="#e08214" stroke-width="2"/>
+		<line x1="255" y1="51" x2="355" y2="51" stroke="#e08214" stroke-width="1"/>
+		<text x="263" y="43.75" fill="#000" font-family="Verdana" font-size="12">DISPOSER DE</text>
+	</g>
+</g>
+
+<!-- Association CREE -->
+<g class="page_0_Nt5GXIbb diagram_page" visibility="visible">
+	<line x1="189" y1="51" x2="189" y2="143" stroke="#e08214" stroke-width="2"/>
+	<text x="194" y="110" fill="#542788" font-family="Verdana" font-size="12">0,N</text>
+	<line x1="189" y1="235" x2="189" y2="143" stroke="#e08214" stroke-width="2"/>
+	<text x="194" y="202" fill="#542788" font-family="Verdana" font-size="12">1,1</text>
+	<g>
+		<path d="M201 118 a14 14 90 0 1 14 14 V143 h-52 V132 a14 14 90 0 1 14 -14" fill="#fdb863" stroke="#fdb863" stroke-width="0"/>
+		<path d="M215 143 v11 a14 14 90 0 1 -14 14 H177 a14 14 90 0 1 -14 -14 V143 H52" fill="#fee0b6" stroke="#fee0b6" stroke-width="0"/>
+		<rect x="163" y="118" width="52" height="50" fill="none" rx="14" stroke="#e08214" stroke-width="2"/>
+		<line x1="163" y1="143" x2="215" y2="143" stroke="#e08214" stroke-width="1"/>
+		<text x="173" y="135.75" fill="#000" font-family="Verdana" font-size="12">CREE</text>
+		<text x="170" y="160.8" fill="#000" font-family="Verdana" font-size="12">status</text>
+	</g>
+</g>
+
+<!-- Association APPARTIENT A -->
+<g class="page_0_Nt5GXIbb diagram_page" visibility="visible">
+	<line x1="61" y1="143" x2="61" y2="235" stroke="#e08214" stroke-width="2"/>
+	<text x="66" y="202" fill="#542788" font-family="Verdana" font-size="12">0,N</text>
+	<line x1="189" y1="235" x2="61" y2="235" stroke="#e08214" stroke-width="2"/>
+	<text x="133" y="252" fill="#542788" font-family="Verdana" font-size="12">1,N</text>
+	<g>
+		<path d="M99 210 a14 14 90 0 1 14 14 V235 h-104 V224 a14 14 90 0 1 14 -14" fill="#fdb863" stroke="#fdb863" stroke-width="0"/>
+		<path d="M113 235 v11 a14 14 90 0 1 -14 14 H23 a14 14 90 0 1 -14 -14 V235 H104" fill="#fee0b6" stroke="#fee0b6" stroke-width="0"/>
+		<rect x="9" y="210" width="104" height="50" fill="none" rx="14" stroke="#e08214" stroke-width="2"/>
+		<line x1="9" y1="235" x2="113" y2="235" stroke="#e08214" stroke-width="1"/>
+		<text x="17" y="227.75" fill="#000" font-family="Verdana" font-size="12">APPARTIENT A</text>
+	</g>
+</g>
+
+<!-- Association COMPOSE -->
+<g class="page_0_Nt5GXIbb diagram_page" visibility="visible">
+	<line x1="305" y1="143" x2="305" y2="235" stroke="#e08214" stroke-width="2"/>
+	<text x="310" y="202" fill="#542788" font-family="Verdana" font-size="12">0,N</text>
+	<line x1="189" y1="235" x2="305" y2="235" stroke="#e08214" stroke-width="2"/>
+	<text x="223" y="252" fill="#542788" font-family="Verdana" font-size="12">1,N</text>
+	<g>
+		<path d="M329 210 a14 14 90 0 1 14 14 V235 h-76 V224 a14 14 90 0 1 14 -14" fill="#fdb863" stroke="#fdb863" stroke-width="0"/>
+		<path d="M343 235 v11 a14 14 90 0 1 -14 14 H281 a14 14 90 0 1 -14 -14 V235 H76" fill="#fee0b6" stroke="#fee0b6" stroke-width="0"/>
+		<rect x="267" y="210" width="76" height="50" fill="none" rx="14" stroke="#e08214" stroke-width="2"/>
+		<line x1="267" y1="235" x2="343" y2="235" stroke="#e08214" stroke-width="1"/>
+		<text x="275" y="227.75" fill="#000" font-family="Verdana" font-size="12">COMPOSE</text>
+	</g>
+</g>
+
+<!-- Association INTERVIENT SUR -->
+<g class="page_0_Nt5GXIbb diagram_page" visibility="visible">
+	<line x1="189" y1="235" x2="189" y2="327" stroke="#e08214" stroke-width="2"/>
+	<text x="194" y="277" fill="#542788" font-family="Verdana" font-size="12">1,1</text>
+	<line x1="61" y1="327" x2="189" y2="327" stroke="#e08214" stroke-width="2"/>
+	<text x="102" y="344" fill="#542788" font-family="Verdana" font-size="12">1,N</text>
+	<g>
+		<path d="M235 302 a14 14 90 0 1 14 14 V327 h-120 V316 a14 14 90 0 1 14 -14" fill="#fdb863" stroke="#fdb863" stroke-width="0"/>
+		<path d="M249 327 v11 a14 14 90 0 1 -14 14 H143 a14 14 90 0 1 -14 -14 V327 H120" fill="#fee0b6" stroke="#fee0b6" stroke-width="0"/>
+		<rect x="129" y="302" width="120" height="50" fill="none" rx="14" stroke="#e08214" stroke-width="2"/>
+		<line x1="129" y1="327" x2="249" y2="327" stroke="#e08214" stroke-width="1"/>
+		<text x="137" y="319.75" fill="#000" font-family="Verdana" font-size="12">INTERVIENT SUR</text>
+	</g>
+</g>
+
+<!-- Entity CASERNE -->
+<g class="page_0_Nt5GXIbb diagram_page" visibility="visible">
+	<g>
+		<rect x="155" y="9" width="68" height="25" fill="#b2abd2" stroke="#b2abd2" stroke-width="0" opacity="1"/>
+		<rect x="155" y="34" width="68" height="59" fill="#d8daeb" stroke="#d8daeb" stroke-width="0" opacity="1"/>
+		<rect x="155" y="9" width="68" height="84" fill="none" stroke="#8073ac" stroke-width="2" opacity="1"/>
+		<line x1="155" y1="34" x2="223" y2="34" stroke="#8073ac" stroke-width="1"/>
+	</g>
+	<text x="160" y="26.75" fill="#000" font-family="Verdana" font-size="12">CASERNE</text>
+	<text x="160" y="51.8" fill="#000" font-family="Verdana" font-size="12">id</text>
+	<line x1="160" y1="54" x2="172" y2="54" stroke="#000" stroke-width="1"/>
+	<text x="160" y="68.8" fill="#000" font-family="Verdana" font-size="12">rue</text>
+	<text x="160" y="85.8" fill="#000" font-family="Verdana" font-size="12">ville</text>
+</g>
+
+<!-- Entity POMPIER -->
+<g class="page_0_Nt5GXIbb diagram_page" visibility="visible">
+	<g>
+		<rect x="28" y="101" width="66" height="25" fill="#b2abd2" stroke="#b2abd2" stroke-width="0" opacity="1"/>
+		<rect x="28" y="126" width="66" height="59" fill="#d8daeb" stroke="#d8daeb" stroke-width="0" opacity="1"/>
+		<rect x="28" y="101" width="66" height="84" fill="none" stroke="#8073ac" stroke-width="2" opacity="1"/>
+		<line x1="28" y1="126" x2="94" y2="126" stroke="#8073ac" stroke-width="1"/>
+	</g>
+	<text x="33" y="118.75" fill="#000" font-family="Verdana" font-size="12">POMPIER</text>
+	<text x="33" y="143.8" fill="#000" font-family="Verdana" font-size="12">id</text>
+	<line x1="33" y1="146" x2="45" y2="146" stroke="#000" stroke-width="1"/>
+	<text x="33" y="160.8" fill="#000" font-family="Verdana" font-size="12">nom</text>
+	<text x="33" y="177.8" fill="#000" font-family="Verdana" font-size="12">prenom</text>
+</g>
+
+<!-- Entity CAMION -->
+<g class="page_0_Nt5GXIbb diagram_page" visibility="visible">
+	<g>
+		<rect x="271" y="101" width="68" height="25" fill="#b2abd2" stroke="#b2abd2" stroke-width="0" opacity="1"/>
+		<rect x="271" y="126" width="68" height="59" fill="#d8daeb" stroke="#d8daeb" stroke-width="0" opacity="1"/>
+		<rect x="271" y="101" width="68" height="84" fill="none" stroke="#8073ac" stroke-width="2" opacity="1"/>
+		<line x1="271" y1="126" x2="339" y2="126" stroke="#8073ac" stroke-width="1"/>
+	</g>
+	<text x="280" y="118.75" fill="#000" font-family="Verdana" font-size="12">CAMION</text>
+	<text x="276" y="143.8" fill="#000" font-family="Verdana" font-size="12">id</text>
+	<line x1="276" y1="146" x2="288" y2="146" stroke="#000" stroke-width="1"/>
+	<text x="276" y="160.8" fill="#000" font-family="Verdana" font-size="12">latitude</text>
+	<text x="276" y="177.8" fill="#000" font-family="Verdana" font-size="12">longitude</text>
+</g>
+
+<!-- Entity EQUIPE -->
+<g class="page_0_Nt5GXIbb diagram_page" visibility="visible">
+	<g>
+		<rect x="160" y="210" width="58" height="25" fill="#b2abd2" stroke="#b2abd2" stroke-width="0" opacity="1"/>
+		<rect x="160" y="235" width="58" height="25" fill="#d8daeb" stroke="#d8daeb" stroke-width="0" opacity="1"/>
+		<rect x="160" y="210" width="58" height="50" fill="none" stroke="#8073ac" stroke-width="2" opacity="1"/>
+		<line x1="160" y1="235" x2="218" y2="235" stroke="#8073ac" stroke-width="1"/>
+	</g>
+	<text x="166" y="227.75" fill="#000" font-family="Verdana" font-size="12">EQUIPE</text>
+	<text x="165" y="252.8" fill="#000" font-family="Verdana" font-size="12">id</text>
+	<line x1="165" y1="255" x2="177" y2="255" stroke="#000" stroke-width="1"/>
+</g>
+
+<!-- Entity INCENDIE -->
+<g class="page_0_Nt5GXIbb diagram_page" visibility="visible">
+	<g>
+		<rect x="25" y="285" width="72" height="25" fill="#b2abd2" stroke="#b2abd2" stroke-width="0" opacity="1"/>
+		<rect x="25" y="310" width="72" height="59" fill="#d8daeb" stroke="#d8daeb" stroke-width="0" opacity="1"/>
+		<rect x="25" y="285" width="72" height="84" fill="none" stroke="#8073ac" stroke-width="2" opacity="1"/>
+		<line x1="25" y1="310" x2="97" y2="310" stroke="#8073ac" stroke-width="1"/>
+	</g>
+	<text x="30" y="302.75" fill="#000" font-family="Verdana" font-size="12">INCENDIE</text>
+	<text x="30" y="327.8" fill="#000" font-family="Verdana" font-size="12">id</text>
+	<line x1="30" y1="330" x2="42" y2="330" stroke="#000" stroke-width="1"/>
+	<text x="30" y="344.8" fill="#000" font-family="Verdana" font-size="12">latitude</text>
+	<text x="30" y="361.8" fill="#000" font-family="Verdana" font-size="12">longitude</text>
+</g>
+</svg>
