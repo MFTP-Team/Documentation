@@ -11,10 +11,12 @@ Membres :
 | Tanguy | IOT |
 | Paul | Réseau |
 
+### Schéma global de l'architecture
 
-
-## Partie Logicielle
+![Schéma Architecture   Flux drawio](https://user-images.githubusercontent.com/57757196/206157613-a9cb0533-2a1e-4c93-8b9a-3e8ea66a4bbf.png)
 
 ## Base de données
+
+## Partie Logicielle
 
 ## Réseaux
