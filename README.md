@@ -3,8 +3,10 @@
 
 Documentation du projet scientifique, équipe #13
 
-Membres :
-| Martin | Web/Java |
+Membres :  
+| Prénom | Partie |
+|--|--|
+|Martin|Web/Java|
 | François | Web/Java|
 | Tanguy | IOT |
 | Paul | Réseau |
