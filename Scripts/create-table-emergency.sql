@@ -1,68 +1,86 @@
+-- Database: emergency
+
+-- DROP DATABASE IF EXISTS emergency;
+
+DROP TABLE IF EXISTS FIREMAN_INTERVENTION;
+DROP TABLE IF EXISTS TRUCK_INTERVENTION;
+DROP TABLE IF EXISTS TRUCK;
+DROP TABLE IF EXISTS INTERVENTION;
+DROP TABLE IF EXISTS FIREMAN;
+DROP TABLE IF EXISTS ALERT;
+DROP TABLE IF EXISTS FIRE;
+DROP TABLE IF EXISTS STATION;
+
+
 CREATE TABLE ALERT (
-  id_alert SERIAL,
-  date_alert TIMESTAMP,
-  longitude_alert REAL,
-  latitude_alert REAL,
-  id_fire_alert INTEGER,
-  PRIMARY KEY (id_alert)
+  id SERIAL,
+  date TIMESTAMP,
+  longitude REAL,
+  latitude REAL,
+  intensity INTEGER,
+  id_fire INTEGER,
+  PRIMARY KEY (id)
 );
 
 CREATE TABLE FIRE (
-  id_fire SERIAL,
-  longitude_fire REAL,
-  latitude_fire REAL,
-  status_fire VARCHAR(50),
-  PRIMARY KEY (id_fire)
+  id SERIAL,
+  longitude REAL,
+  latitude REAL,
+  intensity INTEGER,
+  status VARCHAR(50),
+  PRIMARY KEY (id)
 );
 
 CREATE TABLE FIREMAN (
-  id_fireman SERIAL,
-  firstname_fireman VARCHAR(50),
-  lastname_fireman VARCHAR(50),
-  id_station_fireman INTEGER,
-  PRIMARY KEY (id_fireman)
+  id SERIAL,
+  firstname VARCHAR(50),
+  lastname VARCHAR(50),
+  power  INTEGER,
+  id_station INTEGER,
+  PRIMARY KEY (id)
 );
 
 CREATE TABLE INTERVENTION (
-  id_intervention SERIAL,
-  date_intervention TIMESTAMP,
+  id SERIAL,
+  date TIMESTAMP,
   status VARCHAR(50),
-  id_fire_intervention INTEGER,
-  PRIMARY KEY (id_intervention)
+  id_fire INTEGER,
+  PRIMARY KEY (id)
 );
 
 CREATE TABLE TRUCK_INTERVENTION (
-  id_truck_ti INTEGER,
-  id_intervention_ti INTEGER,
-  PRIMARY KEY (id_truck_ti, id_intervention_ti)
+  id_truck INTEGER,
+  id_intervention INTEGER,
+  PRIMARY KEY (id_truck, id_intervention)
 );
 
 CREATE TABLE STATION (
-  id_station SERIAL,
-  longitude_station REAL,
-  latitude_station REAL,
-  PRIMARY KEY (id_station)
+  id SERIAL,
+  longitude REAL,
+  latitude REAL,
+  PRIMARY KEY (id)
 );
 
 CREATE TABLE TRUCK (
-  id_truck SERIAL,
-  longitude_truck VARCHAR(50),
-  latitude_truck VARCHAR(50),
-  id_station_truck INTEGER,
-  PRIMARY KEY (id_truck)
+  id SERIAL,
+  longitude VARCHAR(50),
+  latitude VARCHAR(50),
+  power  INTEGER,
+  id_station INTEGER,
+  PRIMARY KEY (id)
 );
 
 CREATE TABLE FIREMAN_INTERVENTION (
-  id_fireman_fi INTEGER,
-  id_intervention_fi INTEGER,
-  PRIMARY KEY (id_fireman_fi, id_intervention_fi)
+  id_fireman INTEGER,
+  id_intervention INTEGER,
+  PRIMARY KEY (id_fireman, id_intervention)
 );
 
-ALTER TABLE ALERT ADD FOREIGN KEY (id_fire_alert) REFERENCES FIRE (id_fire);
-ALTER TABLE INTERVENTION ADD FOREIGN KEY (id_fire_intervention) REFERENCES FIRE (id_fire);
-ALTER TABLE FIREMAN ADD FOREIGN KEY (id_station_fireman) REFERENCES STATION (id_station);
-ALTER TABLE TRUCK_INTERVENTION ADD FOREIGN KEY (id_truck_ti) REFERENCES TRUCK (id_truck);
-ALTER TABLE TRUCK_INTERVENTION ADD FOREIGN KEY (id_intervention_ti) REFERENCES INTERVENTION (id_intervention);
-ALTER TABLE TRUCK ADD FOREIGN KEY (id_station_truck) REFERENCES STATION (id_station);
-ALTER TABLE FIREMAN_INTERVENTION ADD FOREIGN KEY (id_fireman_fi) REFERENCES FIREMAN (id_fireman);
-ALTER TABLE FIREMAN_INTERVENTION ADD FOREIGN KEY (id_intervention_fi) REFERENCES INTERVENTION (id_intervention);
+ALTER TABLE ALERT ADD FOREIGN KEY (id_fire) REFERENCES FIRE (id);
+ALTER TABLE INTERVENTION ADD FOREIGN KEY (id_fire) REFERENCES FIRE (id);
+ALTER TABLE FIREMAN ADD FOREIGN KEY (id_station) REFERENCES STATION (id);
+ALTER TABLE TRUCK_INTERVENTION ADD FOREIGN KEY (id_truck) REFERENCES TRUCK (id);
+ALTER TABLE TRUCK_INTERVENTION ADD FOREIGN KEY (id_intervention) REFERENCES INTERVENTION (id);
+ALTER TABLE TRUCK ADD FOREIGN KEY (id_station) REFERENCES STATION (id);
+ALTER TABLE FIREMAN_INTERVENTION ADD FOREIGN KEY (id_fireman) REFERENCES FIREMAN (id);
+ALTER TABLE FIREMAN_INTERVENTION ADD FOREIGN KEY (id_intervention) REFERENCES INTERVENTION (id);
