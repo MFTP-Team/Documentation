@@ -25,8 +25,12 @@ TO DO : UPDATE SCHEMA
 
 #### Simulator
 
+<img width="225" alt="image" src="https://user-images.githubusercontent.com/102656423/206662008-acfe5e7b-2f02-405a-bcc6-d5304d5baf70.png">
+
+
 ## Base de données
 
+### EmergencyManager
 <img width="347" alt="image" src="https://user-images.githubusercontent.com/102656423/206653865-c0e83d61-f12b-48e8-9345-2f98a8593e85.png">
 
 
@@ -38,6 +42,14 @@ TO DO : UPDATE SCHEMA
 **STATION** (<ins>id</ins>, longitude, latitude)<br>
 **TRUCK** (<ins>id</ins>, longitude, latitude,power, _#id_station_)<br>
 **FIREMEN_INTERVENTION** (<ins>_#id_firemen_</ins>, <ins>_#id_intervention_</ins>)
+
+#### Simulator
+<img width="144" alt="image" src="https://user-images.githubusercontent.com/102656423/206661907-30815975-cec1-4326-aadb-6dd3ae3b9251.png">
+
+**ALERT** (<ins>id</ins>, latitude, longitude, intensity, _#id_sensor_)<br>
+**FIRE** (<ins>id</ins>, latitude, longitude, intensity)<br>
+**SENSOR** (<ins>id</ins>, latitude, longitude)<br>
+**TRUCK** (<ins>id</ins>, latitude, longitude, power)<br>
 
 ## Partie Logicielle
 
