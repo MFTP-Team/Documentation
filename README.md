@@ -32,11 +32,11 @@ TO DO : UPDATE SCHEMA
 
 **ALERT** (<ins>id</ins>, date, longitude, latitude, intensity, _#id_fire_)<br>
 **FIRE** (<ins>id</ins>, longitude, latitude, intensity, status)<br>
-**FIREMAN** (<ins>id</ins>, firstname, lastname, _#id_station_)<br>
+**FIREMAN** (<ins>id</ins>, firstname, lastname,power, _#id_station_)<br>
 **INTERVENTION** (<ins>id</ins>, date, status, _#id_fire_)<br>
 **TRUCK_INTERVENTION** (<ins>_#id_</ins>, <ins>_#id_</ins>)<br>
 **STATION** (<ins>id</ins>, longitude, latitude)<br>
-**TRUCK** (<ins>id_truck</ins>, longitude, latitude,power, _#id_station_)<br>
+**TRUCK** (<ins>id</ins>, longitude, latitude,power, _#id_station_)<br>
 **FIREMEN_INTERVENTION** (<ins>_#id_firemen_</ins>, <ins>_#id_intervention_</ins>)
 
 ## Partie Logicielle
