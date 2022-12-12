@@ -59,6 +59,8 @@ TO DO : UPDATE SCHEMA
 
 ### Diagramme de classe Partie Simulation
 
+La partie modèle n'est pas présente car elle est identique au schéma précedent
+
 ![Diagramme Simulator](https://user-images.githubusercontent.com/57757196/207066218-2b9ccf2d-46c0-41a8-adab-58e29371e000.png)
 
 Le scheduledTasks contient le truckService/SensorService  
