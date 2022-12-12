@@ -61,10 +61,10 @@ TO DO : UPDATE SCHEMA
 
 ![Diagramme Simulator](https://user-images.githubusercontent.com/57757196/207066218-2b9ccf2d-46c0-41a8-adab-58e29371e000.png)
 
-Le scheduledTasks contient le truckService/SensorService 
-Le fireService contient le AlertService et le SensorService et le FireRepository
-Le truckService contient le TruckRepoitory
-Le alertService contientle AlertRepository
-Le SensorService contient le SensorRepository
+Le scheduledTasks contient le truckService/SensorService  
+Le fireService contient le AlertService et le SensorService et le FireRepository  
+Le truckService contient le TruckRepoitory  
+Le alertService contientle AlertRepository  
+Le SensorService contient le SensorRepository  
 
 ## Réseaux
