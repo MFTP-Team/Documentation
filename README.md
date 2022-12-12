@@ -53,11 +53,38 @@ TO DO : UPDATE SCHEMA
 
 ## Partie Logicielle
 
-### Diagramme de classe Partie Emergency
+### Emergency
 
+**Diagramme de classe**
 ![EmergencyDiagramme](https://user-images.githubusercontent.com/57757196/207066035-eefa3490-0d8c-4e06-bf71-d56f31950ff0.png)
 
-### Diagramme de classe Partie Simulation
+**Liste des endpoints**
+
+- /api
+  - /resource
+    - /truck/add
+    - /truck/edit
+    - /truck/delete
+    - /fireman/add
+    - /fireman/edit
+    - /fireman/delete
+  - /fire
+    - /add
+    - /edit
+    - /delete
+  - /intervention
+    - /add
+    - /edit
+    - /delete
+  - /alert
+    - /add
+    - /edit
+    - /delete 
+    - /receive/{alert}
+
+### Simulation
+
+**Diagramme de classe**
 
 La partie modèle n'est pas présente car elle est identique au schéma précedent
 
@@ -68,5 +95,26 @@ Le fireService contient le AlertService et le SensorService et le FireRepository
 Le truckService contient le TruckRepoitory  
 Le alertService contientle AlertRepository  
 Le SensorService contient le SensorRepository  
+
+** Liste des endpoints**
+
+- /api
+  - /fire
+    - /add
+    - /edit
+    - /delete
+  - /intervention
+    - /add
+    - /edit
+    - /delete
+  - /alert
+    - /add
+    - /edit
+    - /delete 
+    - /receive/{alert}
+  - /sensor
+    - /add
+    - /edit
+    - /delete 
 
 ## Réseaux
