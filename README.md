@@ -64,22 +64,31 @@ TO DO : UPDATE SCHEMA
   - /resource
     - /truck/add
     - /truck/edit
-    - /truck/delete
+    - /truck/get
+    - /truck/get/{id}
+    - /truck/delete/{id}
     - /fireman/add
     - /fireman/edit
-    - /fireman/delete
+    - /fireman/delete/{id}
+    - /fireman/get/{id}
   - /fire
     - /add
     - /edit
-    - /delete
+    - /delete/{id}
+    - /get
+    - /get/{id}
   - /intervention
     - /add
     - /edit
-    - /delete
+    - /delete/{id}
+    - /get
+    - /get/{id}
   - /alert
     - /add
     - /edit
-    - /delete 
+    - /delete/{id}
+    - /get
+    - /get/{id}
     - /receive/{alert}
 
 ### Simulation
@@ -102,19 +111,27 @@ Le SensorService contient le SensorRepository
   - /fire
     - /add
     - /edit
-    - /delete
+    - /delete/{id}
+    - /get
+    - /get/{id}
   - /intervention
     - /add
     - /edit
-    - /delete
+    - /delete/{id}
+    - /get
+    - /get/{id}
   - /alert
     - /add
     - /edit
-    - /delete 
+    - /delete/{id}
+    - /get
+    - /get/{id}
     - /receive/{alert}
   - /sensor
     - /add
     - /edit
-    - /delete 
+    - /delete/{id}
+    - /get
+    - /get/{id}
 
 ## Réseaux
