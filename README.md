@@ -25,8 +25,12 @@ TO DO : UPDATE SCHEMA
 
 #### Simulator
 
+<img width="225" alt="image" src="https://user-images.githubusercontent.com/102656423/206662008-acfe5e7b-2f02-405a-bcc6-d5304d5baf70.png">
+
+
 ## Base de données
 
+### EmergencyManager
 <img width="347" alt="image" src="https://user-images.githubusercontent.com/102656423/206653865-c0e83d61-f12b-48e8-9345-2f98a8593e85.png">
 
 
@@ -39,6 +43,95 @@ TO DO : UPDATE SCHEMA
 **TRUCK** (<ins>id</ins>, longitude, latitude,power, _#id_station_)<br>
 **FIREMEN_INTERVENTION** (<ins>_#id_firemen_</ins>, <ins>_#id_intervention_</ins>)
 
+#### Simulator
+<img width="144" alt="image" src="https://user-images.githubusercontent.com/102656423/206661907-30815975-cec1-4326-aadb-6dd3ae3b9251.png">
+
+**ALERT** (<ins>id</ins>, latitude, longitude, intensity, _#id_sensor_)<br>
+**FIRE** (<ins>id</ins>, latitude, longitude, intensity)<br>
+**SENSOR** (<ins>id</ins>, latitude, longitude)<br>
+**TRUCK** (<ins>id</ins>, latitude, longitude, power)<br>
+
 ## Partie Logicielle
+
+### Emergency
+
+**Diagramme de classe**
+![EmergencyDiagramme](https://user-images.githubusercontent.com/57757196/207066035-eefa3490-0d8c-4e06-bf71-d56f31950ff0.png)
+
+**Liste des endpoints**
+
+- /api
+  - /resource
+    - /truck/add
+    - /truck/edit
+    - /truck/get
+    - /truck/get/{id}
+    - /truck/delete/{id}
+    - /fireman/add
+    - /fireman/edit
+    - /fireman/delete/{id}
+    - /fireman/get/{id}
+  - /fire
+    - /add
+    - /edit
+    - /delete/{id}
+    - /get
+    - /get/{id}
+  - /intervention
+    - /add
+    - /edit
+    - /delete/{id}
+    - /get
+    - /get/{id}
+  - /alert
+    - /add
+    - /edit
+    - /delete/{id}
+    - /get
+    - /get/{id}
+    - /receive/{alert}
+
+### Simulation
+
+**Diagramme de classe**
+
+La partie modèle n'est pas présente car elle est identique au schéma précedent
+
+![Diagramme Simulator (1)](https://user-images.githubusercontent.com/57757196/207084172-7f79f48d-6288-40b5-a831-59bf83093585.png)
+
+Le scheduledTasks contient le truckService/SensorService  
+Le fireService contient le AlertService et le SensorService et le FireRepository  
+Le truckService contient le TruckRepoitory  
+Le alertService contientle AlertRepository  
+Le SensorService contient le SensorRepository  
+
+** Liste des endpoints**
+
+- /api
+  - /fire
+    - /add
+    - /edit
+    - /delete/{id}
+    - /get
+    - /get/{id}
+  - /intervention
+    - /add
+    - /edit
+    - /delete/{id}
+    - /get
+    - /get/{id}
+  - /alert
+    - /add
+    - /edit
+    - /delete/{id}
+    - /get
+    - /get/{id}
+    - /receive/{alert}
+  - /sensor
+    - /add
+    - /edit
+    - /delete/{id}
+    - /get
+    - /get/{id}
 
 ## Réseaux
