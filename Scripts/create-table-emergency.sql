@@ -27,7 +27,7 @@ CREATE TABLE FIRE (
   longitude REAL,
   latitude REAL,
   intensity INTEGER,
-  status VARCHAR(50),
+  status SMALLINT,
   PRIMARY KEY (id)
 );
 
@@ -37,13 +37,14 @@ CREATE TABLE FIREMAN (
   lastname VARCHAR(50),
   power  INTEGER,
   id_station INTEGER,
+  status, SMALLINT,
   PRIMARY KEY (id)
 );
 
 CREATE TABLE INTERVENTION (
   id SERIAL,
   date TIMESTAMP,
-  status VARCHAR(50),
+  status SMALLINT,
   id_fire INTEGER,
   PRIMARY KEY (id)
 );
@@ -67,6 +68,7 @@ CREATE TABLE TRUCK (
   latitude VARCHAR(50),
   power  INTEGER,
   id_station INTEGER,
+  status, SMALLINT,
   PRIMARY KEY (id)
 );
 

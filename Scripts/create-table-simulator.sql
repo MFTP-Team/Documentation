@@ -28,6 +28,7 @@ CREATE TABLE SENSOR (
   id SERIAL,
   latitude REAL,
   longitude REAL,
+  radius INTEGER,
   PRIMARY KEY (id)
 );
 
