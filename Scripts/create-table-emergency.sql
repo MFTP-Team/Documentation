@@ -19,6 +19,7 @@ CREATE TABLE ALERT (
   latitude REAL,
   intensity INTEGER,
   id_fire INTEGER,
+  id_sensor VARCHAR(8)
   PRIMARY KEY (id)
 );
 
